@@ -18,6 +18,25 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ALGO4-1.c" />
+    <ClCompile Include="ALGO4-2.c" />
+    <ClCompile Include="algo4-3.c" />
+    <ClCompile Include="ALGO4-4.c" />
+    <ClCompile Include="ALGO4-5.c" />
+    <ClCompile Include="BO4-1.C" />
+    <ClCompile Include="Bo4-2.c" />
+    <ClCompile Include="BO4-3.c" />
+    <ClCompile Include="MAIN4-1.c" />
+    <ClCompile Include="MAIN4-2.c" />
+    <ClCompile Include="Main4-3.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c1.h" />
+    <ClInclude Include="C4-1.H" />
+    <ClInclude Include="C4-2.H" />
+    <ClInclude Include="C4-3.H" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9D5181F0-540C-4030-AB5D-90E8547B475C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
