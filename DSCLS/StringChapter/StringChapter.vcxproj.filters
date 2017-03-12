@@ -15,49 +15,52 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C4-1.H">
+    <ClCompile Include="ALGO4-1.CPP">
       <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="C4-2.H">
+    </ClCompile>
+    <ClCompile Include="ALGO4-2.CPP">
       <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="C4-3.H">
+    </ClCompile>
+    <ClCompile Include="algo4-3.cpp">
       <Filter>源文件</Filter>
-    </ClInclude>
+    </ClCompile>
+    <ClCompile Include="ALGO4-4.CPP">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ALGO4-5.CPP">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bo4-1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bo4-2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BO4-3.CPP">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN4-1.CPP">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN4-2.CPP">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Main4-3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ALGO4-1.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ALGO4-2.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="algo4-3.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ALGO4-4.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ALGO4-5.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="BO4-1.C">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Bo4-2.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="BO4-3.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MAIN4-1.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MAIN4-2.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Main4-3.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="C4-1.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C4-2.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C4-3.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="c1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
