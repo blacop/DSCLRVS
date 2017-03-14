@@ -18,29 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="ALGO4-1.c" />
-    <ClCompile Include="ALGO4-2.c" />
-    <ClCompile Include="algo4-3.c" />
-    <ClCompile Include="ALGO4-4.c" />
-    <ClCompile Include="ALGO4-5.c" />
-    <ClCompile Include="BO4-1.C" />
-    <ClCompile Include="Bo4-2.c" />
-    <ClCompile Include="BO4-3.c" />
-    <ClCompile Include="MAIN4-1.c" />
-    <ClCompile Include="MAIN4-2.c" />
-    <ClCompile Include="Main4-3.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="c1.h" />
-    <ClInclude Include="C4-1.H" />
-    <ClInclude Include="C4-2.H" />
-    <ClInclude Include="C4-3.H" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9D5181F0-540C-4030-AB5D-90E8547B475C}</ProjectGuid>
+    <ProjectGuid>{495B872F-66C3-4A01-BA10-E615C42DD73B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>StringChapter</RootNamespace>
+    <RootNamespace>TreeChapter</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -107,6 +88,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +102,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,6 +118,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,6 +136,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -160,6 +145,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
