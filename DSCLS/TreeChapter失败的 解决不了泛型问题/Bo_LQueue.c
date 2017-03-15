@@ -1,19 +1,19 @@
-#ifndef _QueueLink_H //µ¥Á´¶ÓÁĞ ´æ´¢½á¹¹ ¶¨Òå
-#define _QueueLink_H
-//#include"c3-2.h"
-/* c3-2.h µ¥Á´¶ÓÁĞ£­£­¶ÓÁĞµÄÁ´Ê½´æ´¢½á¹¹ ¶¨Òå */
-typedef struct QNode {
-	QElemType data;
-	struct QNode *next;
-}QNode, *QueuePtr;
-typedef struct {
-	QueuePtr front, rear; /* ¶ÓÍ·¡¢¶ÓÎ²Ö¸Õë */
-}LinkQueue;
-#endif //!_QueueLink_H
+#ifndef C_C_h //Í¨ÓÃµÄÔ¤¶¨Òå
+#define C_C_h 
+#include "C_C.h" //ÒıÓÃ´ËÎÄ¼ş
+#endif // !C_C_h
 
-#ifndef _QueueLink_Body//µ¥Á´¶ÓÁĞ ´æ´¢½á¹¹ ²Ù×÷·½·¨ ÊµÏÖ
-#define _QQueueLink_Body
-//#include"bo3-2.c"
+#ifndef C_LQueue_h //µ¥Á´¶ÓÁĞ ´æ´¢½á¹¹ ¶¨Òå
+#define C_LQueue_h 
+#include"C_LQueue.h" //ÒıÓÃ´ËÎÄ¼ş
+#endif //!C_LQueue_h
+
+//×ÔÉí
+//#ifndef Bo_LQueue_c //µ¥Á´¶ÓÁĞ ´æ´¢½á¹¹ ²Ù×÷·½·¨ ÊµÏÖ
+//#define Bo_LQueue_c
+//#include "Bo_LQueue.c" //ÒıÓÃ´ËÎÄ¼ş
+//#endif //!Bo_LQueue_c
+
 /* bo3-2.c Á´¶ÓÁĞ(´æ´¢½á¹¹ÓÉc3-2.h¶¨Òå)µÄ»ù±¾²Ù×÷(9¸ö) */
 Status InitQueue(LinkQueue *Q) { /* ¹¹ÔìÒ»¸ö¿Õ¶ÓÁĞQ */
 	(*Q).front = (*Q).rear = (QueuePtr)malloc(sizeof(QNode));
@@ -107,4 +107,4 @@ Status QueueTraverse(LinkQueue Q, void(*vi)(QElemType)) { /* ´Ó¶ÓÍ·µ½¶ÓÎ²ÒÀ´Î¶Ô¶
 	printf("\n");
 	return OK;
 }
-#endif //!_QueueLink_Body
+

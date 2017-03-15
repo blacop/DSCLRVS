@@ -1,4 +1,7 @@
-#include<string.h>/* c1.h (程序名) */
+#ifndef C_Currency_h 
+#define C_Currency_h //通用的预定义语句
+//#include "Capt_Currency.h" //引用此文件
+#include<string.h> //c1.h (程序名)
 #include<ctype.h>
 #include<malloc.h> /* malloc()等 */
 #include<limits.h> /* INT_MAX等 */
@@ -18,15 +21,6 @@
 //#define MLCS (Node *)malloc(sizeof(Node)) //泛型结构结点开内存
 typedef int Status; /* Status是函数的类型,其值是函数结果状态代码，如OK等 */
 typedef int Boolean; /* Boolean是布尔类型,其值是TRUE或FALSE */
-typedef int ElemType; //泛型结构的数据域类型
-#define LIST_INIT_SIZE = 100;//表初始分配空间
-#define LIST_INCREMENT = 10;//空间分配增量
-typedef struct List { //泛型顺序表结构
-	ElemType *elem;//存储空间，存放头地址,也可表示数组的名字 或地址  或第一个元素
-	int length;//线性表当前长度
-	int listsize;//当前存储容量
-}List,*PList;//泛型顺序表结构
-typedef struct Node { //泛型链表结构结点
-	ElemType data; //泛型链表结构结点 数据域
-	struct Node *next; //泛型链表结构结点 引用域
-}Node,*PNode; //泛型链表结构结点
+#endif // !C_Currency_h
+
+

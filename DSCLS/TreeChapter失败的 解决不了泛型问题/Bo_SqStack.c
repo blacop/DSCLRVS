@@ -1,7 +1,21 @@
-#ifndef Body_SqStack_c //顺序栈的基本操作（9个）
-#define Body_SqStack_c
-//#include"Body_SqStack.c"
+#ifndef C_C_h //通用的预定义
+#define C_C_h 
+#include "C_C.h" //引用此文件
+#endif // !C_C_h
+
+#ifndef C_SqStack_h //栈的顺序存储表示 定义
+#define C_SqStack_h  
+#include"C_SqStack.h" //引用此文件
+#endif // !C_SqStack_h
+
+//自身
+//#ifndef Bo_SqStack_c //顺序栈 的基本操作 （9个）
+//#define Bo_SqStack_c //#ifndef 代码超过长度了，包不住
+//#include"Bo_SqStack.c" //引用此文件
+//#endif // !Bo_SqStack_c
+
 /* bo3-1.c 顺序栈（存储结构由c3-1.h定义）的基本操作（9个） */
+
 Status InitStack(SqStack *S) { /* 构造一个空栈S */
 	(*S).base = (SElemType *)malloc(STACK_INIT_SIZE * sizeof(SElemType));
 	if (!(*S).base)
@@ -10,7 +24,6 @@ Status InitStack(SqStack *S) { /* 构造一个空栈S */
 	(*S).stacksize = STACK_INIT_SIZE;
 	return OK;
 }
-
 Status DestroyStack(SqStack *S) { /* 销毁栈S，S不再存在 */
 	free((*S).base);
 	(*S).base = NULL;
@@ -76,4 +89,5 @@ Status StackTraverse(SqStack S, Status(*visit)(SElemType)) {
 	printf("\n");
 	return OK;
 }
-#endif // !Body_SqStack_c
+#endif //!Bo_SqStack_c
+

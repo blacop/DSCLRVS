@@ -15,12 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BTBLink.h">
+    <ClInclude Include="C_SqStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C_BTBLink.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C_LQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="C_C.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BTBLink.cpp">
+    <ClCompile Include="Bo_SqStack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bo_BTBLink.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bo_LQueue.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

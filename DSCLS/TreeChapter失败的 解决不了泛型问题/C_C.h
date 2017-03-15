@@ -1,4 +1,11 @@
-#include<string.h>/* c1.h (程序名) */
+//自身
+//#ifndef C_C_h //通用的预定义语句
+//#define C_C_h 
+//#include "C_C.h" //引用此文件
+//#endif // !C_C_h
+
+//通用的预定义
+#include<string.h> //c1.h (程序名)
 #include<ctype.h>
 #include<malloc.h> /* malloc()等 */
 #include<limits.h> /* INT_MAX等 */
@@ -18,8 +25,7 @@
 //#define MLCS (Node *)malloc(sizeof(Node)) //泛型结构结点开内存
 typedef int Status; /* Status是函数的类型,其值是函数结果状态代码，如OK等 */
 typedef int Boolean; /* Boolean是布尔类型,其值是TRUE或FALSE */
-typedef int ElemType; //泛型结构的数据域类型
-typedef struct Node { //泛型链表结构结点
-	ElemType data; //泛型链表结构结点 数据域
-	struct Node *next; //泛型链表结构结点 引用域
-}Node,*PNode; //泛型链表结构结点
+
+
+
+

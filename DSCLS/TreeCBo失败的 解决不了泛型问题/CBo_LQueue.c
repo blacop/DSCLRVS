@@ -1,6 +1,32 @@
-#ifndef Body_LinkQueue_c//µ¥Á´¶ÓÁĞ ´æ´¢½á¹¹ ²Ù×÷·½·¨ ÊµÏÖ
-#define Body_LinkQueue_c
-//#include"Body_LinkQueue.c"
+//ÒıÓÃ¶ş²æÊ÷
+#ifndef CBo_BTBLink_c //¶ş²æÊ÷µÄ¶ş²æÁ´±í´æ´¢±íÊ¾
+#define CBo_BTBLink_c
+#include "CBo_BTBLink.c" //ÒıÓÃ´ËÎÄ¼ş
+#endif // !"CBo_BTBLink_c"
+
+//Íâ²¿Ö¸¶¨ ElemType
+typedef BiTree QElemType; //ÊÖ¶¯Ö¸¶¨ ElemType
+
+//×ÔÉí
+//#ifndef CBo_LQueue_c //µ¥Á´¶ÓÁĞ ´æ´¢½á¹¹ ²Ù×÷·½·¨ ÊµÏÖ
+//#define CBo_LQueue_c
+//#include "CBo_LQueue.c" //ÒıÓÃ´ËÎÄ¼ş
+//#endif //!CBo_LQueue_c
+
+#ifndef C_C_h //Í¨ÓÃµÄÔ¤¶¨Òå
+#define C_C_h 
+#include "C_C.h" //ÒıÓÃ´ËÎÄ¼ş
+#endif // !C_C_h
+
+/* µ¥Á´¶ÓÁĞ£­£­¶ÓÁĞµÄÁ´Ê½´æ´¢½á¹¹ ¶¨Òå */
+typedef struct QNode {
+	QElemType data;
+	struct QNode *next;
+}QNode, *QueuePtr;
+typedef struct {
+	QueuePtr front, rear; /* ¶ÓÍ·¡¢¶ÓÎ²Ö¸Õë */
+}LinkQueue;
+
 /* bo3-2.c Á´¶ÓÁĞ(´æ´¢½á¹¹ÓÉc3-2.h¶¨Òå)µÄ»ù±¾²Ù×÷(9¸ö) */
 Status InitQueue(LinkQueue *Q) { /* ¹¹ÔìÒ»¸ö¿Õ¶ÓÁĞQ */
 	(*Q).front = (*Q).rear = (QueuePtr)malloc(sizeof(QNode));
@@ -94,4 +120,4 @@ Status QueueTraverse(LinkQueue Q, void(*vi)(QElemType)) { /* ´Ó¶ÓÍ·µ½¶ÓÎ²ÒÀ´Î¶Ô¶
 	printf("\n");
 	return OK;
 }
-#endif //!Body_LinkQueue_c
+
